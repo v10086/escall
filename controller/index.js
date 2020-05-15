@@ -20,7 +20,7 @@ export default  class index extends base {
     }
     
     //async  await Promise.all 异步批量处理请求
-    async batch(){
+    async batchV2(){
         const [promise_0, promise_1] =  await Promise.all([
             async   function ()  {
                 return '任务一 end'
