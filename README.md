@@ -16,6 +16,11 @@ config 配置文件目录
 controller 控制器目录
 --base.js 控制器基类
 
+示例
+--------------------------------------------------------------------------
+https://github.com/v10086/escall/blob/master/exmple/exmple_1.png
+https://github.com/v10086/escall/blob/master/exmple/exmple_2.png
+
 
 
 
