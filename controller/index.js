@@ -7,7 +7,7 @@ export default  class index extends base {
         return this.response;
     }
     
-    //async  await Promise.all 异步批量处理请求
+    //async  await 异步批量处理请求
     async batch(){
         const promise_0=  async   function ()  {
                 return '任务一 end'
@@ -18,6 +18,20 @@ export default  class index extends base {
         this.response.body=await promise_0+" "+ await promise_1;
         return this.response;
     }
-       
+    
+    //async  await Promise.all 异步批量处理请求
+    async batch(){
+        const [promise_0, promise_1] =  await Promise.all([
+            async   function ()  {
+                return '任务一 end'
+            }(), 
+            async   function ()  {
+                return '任务二 end';
+        }()]).catch((error) => {
+              console.log(error);
+        });
+        this.response.body=promise_0+" "+promise_1;
+        return this.response;
+    }  
 }
 
