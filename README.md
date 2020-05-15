@@ -18,8 +18,8 @@ controller 控制器目录
 
 示例
 --------------------------------------------------------------------------
-https://github.com/v10086/escall/blob/master/exmple/exmple_1.png
-https://github.com/v10086/escall/blob/master/exmple/exmple_2.png
+![exmple_1](https://github.com/v10086/escall/blob/master/exmple/exmple_1.png) 
+![exmple_2](https://github.com/v10086/escall/blob/master/exmple/exmple_2.png) 
 
 
 
