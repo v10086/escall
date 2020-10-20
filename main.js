@@ -18,7 +18,7 @@ for await (const req of s) {
     if(!route.has(api)){
         //设置http响应头
         let headers = new Headers();
-        headers.append("content-type", "text/html;charset=utf-8");
+        headers.set("content-type", "text/html;charset=utf-8");
         req.respond({status:404, body: "404 Not Found",headers});
     }else{
         try {
@@ -29,7 +29,7 @@ for await (const req of s) {
         } catch (error) {
             //设置http响应头
             let headers = new Headers();
-            headers.append("content-type", "text/html;charset=utf-8");
+            headers.set("content-type", "text/html;charset=utf-8");
             console.log("error",error)
             req.respond({status:500, body: "500 Internal Server Error",headers});
         }finally {
