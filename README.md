@@ -3,7 +3,7 @@ Apache License Version 2.0 see http://www.apache.org/licenses/LICENSE-2.0.html
 
 按照官网https://deno.land/ 说明文档安装完deno.land后
 
-进入项目目录 执行 deno run --allow-net --allow-read  .\main.js 即可
+进入项目目录 执行 deno run --allow-net --allow-read  .\main.js 
 
 
 版本说明 
